@@ -1,0 +1,219 @@
+/*RESPONSIVENESS MAIN PAGE*/
+
+@media only screen and (min-width: 1281px) and (max-width: 1366px){
+    /* CONTACTS */
+    .lets-get-in-touch {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .right-section {
+        width: 100%;
+        align-items: center;
+    }
+    .emailadd, .firstname, .lastname {
+        width: 70% !important;
+    }
+    .left-section {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .left-section p {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .buttons {
+        display: flex;
+        justify-content: end;
+        margin-top: -40px;
+    }
+    .animalholder {
+        position: absolute;
+        right: 0%;
+        top: 109%;
+    }
+    .animalholder img {
+        width: 80%;
+        right: -10%;
+        position:relative;
+        border-radius: 5px;
+    }
+    .infohold {
+        background-color: #e8ffe8;
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        bottom: -63%;
+        left: 7%;
+        border-radius: 10px;
+        text-align: start;
+        padding: 10px 50px;
+    }
+    .places-to-go {
+        height: 750px;
+    }
+    .infohold h3 {
+        font-size: 35px;
+        margin-top: 15px;
+        letter-spacing: -1px;
+        line-height: 45px;
+    }
+    .infohold .infoaboutbirdie {
+        margin-top: 25px;
+    }
+    .infohold .seemore {
+        width: 30%;
+        height: 13%;
+        margin-top: 30px;
+        background-color: #178a17;
+        border: 0;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        letter-spacing: 1px;
+    }
+    .grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 30px;
+    }
+    .footer {
+        background-color: #F1F8FF;
+        padding: 0 11.2rem;
+    }
+    .footer .logo {
+        grid-column: span 2;
+        width: 200%;
+        margin: 50px 0 45px -20px;
+    }
+    .connect {
+        grid-column: 5 / span 5 ;
+        margin: 50px 0 45px 0;
+        padding-left: 2.2rem;
+    }
+    .connect h3 {
+        margin: 50px 0 0 0;
+        font-size: 1.6rem;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem 0;
+    }
+    .contacts .icon {
+        display: flex;
+        align-items: center;
+        margin: 4px 0;
+        gap: 8px;
+        text-decoration: none;
+        color: #222222;
+    }
+    .contacts .icon:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+        transition: 0.3s ease-in-out;
+    }
+    .contacts .icon i {
+        font-size: 1.2rem;
+    }
+    .contacts .icon p {
+        font-size: 0.85rem;
+        color: #343F4F;
+    }
+    .to-top {
+        margin: 110px 0 45px 0;
+        grid-column: 9 / span 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        font-size: 14px;
+        text-decoration: none;
+        color: #222222;
+        padding: 8rem 0 3rem 0;
+    }
+    .map {
+        grid-column: 1/span 4;
+        margin-top: 20px;
+    }
+    .footer-navigation {
+        margin-top: 20px;
+        grid-column: 10;
+        position: absolute;
+        bottom: 66%;
+        margin-left: 5%;
+    }
+    .footer-navigation ul {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-navigation ul li {
+        list-style-type: none;
+    }
+    .footer-navigation ul li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+    .footer-navigation ul li a:hover {
+        font-size: 18px;
+        border-bottom: 3px solid grey;
+    }
+    .card-section .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 10.2rem;
+        gap: 10px;
+    }
+    .card-section .heading h1 {
+        margin: 0 2rem;
+        width: 400px;
+        font-size: 2.4rem;
+    }
+    .card-container {
+        margin-top: 25px;
+        padding: 0px 5%;
+        margin-top: 25px;
+    }
+    .card-section .heading p {
+        font-size: 0.9rem;
+        width: 30%;
+        margin-right: 40px;
+        text-align: center;
+    }
+    .card-section2 {
+        background-color: #ebfcff60;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    hr {
+        width: 45%;
+        margin-left: 15%;
+        margin-top: -35px;
+    }
+    .card-section2 .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 6.2rem;
+        gap: 10px;
+    }
+    .card-section2 .heading h1 {
+        margin: 0 2rem;
+        width: auto;
+        font-size: 1.9rem;
+        text-align: start;
+    }
+    .card-section2 .heading p {
+        font-size: 0.9rem;
+        width: 40%;
+        margin-right: 40px;
+        text-align: end;
+    }
+}
