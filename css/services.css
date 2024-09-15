@@ -1,17 +1,43 @@
 
+
+.brand-title p{
+    margin-top: 13px;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+.grid{
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px){
+    .package-title{
+        font-size: 10px;
+    }
+    .navbar-links-white{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .packages{
-    background: rgba(167, 223, 130, 0.26);
-    padding-bottom: 5rem;
+    background: #98DED9;
+    margin: 0px;
 }
 
 .packages .package-title{
     text-align: center;
     text-transform: uppercase;
+    padding-top: 80px;
     font-size: 4rem;
     font-weight: bolder;
-    padding: 2.1rem 0;
-    color: #333;
+    color: black;
 }
+
+
 
 .packages .box-container{
     display: flex;
@@ -22,7 +48,6 @@
 
 .packages .box-container .box{
     margin-bottom: 50px;
-    margin-top: 5px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
@@ -81,7 +106,7 @@
     text-decoration: line-through;
 }
 
-.packages .box-container .box .package-content a{
+.packages .box-container .box .package-content .details{
     text-transform: capitalize;
     color: #ffffff;
     background-color: orange;
@@ -106,9 +131,12 @@
     .packages .box-container{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        margin: 0 7rem;
+        gap: 1.5rem;
+        margin: 0 3.5rem;
         flex-wrap: wrap;
+    }
+    .popup-details{
+        margin-left: 0px;
     }
 }
 
@@ -224,7 +252,7 @@ summary:hover{
 }
 
 .faq_body{
-    background-color: #bfe7b38b;
+    background-color: #98DED9;
     border-radius: 10px;
     padding: 30px 10px;
     width: 80%;
@@ -308,86 +336,3 @@ summary:hover{
 
 
 
-
-
-
-.lets-get-in-touch {
-    margin: 3% 0px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.lets-get-in-touch h2 {
-    font-size: 3rem;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-.lets-get-in-touch p {
-    margin-top: 70px;
-}
-
-.lets-get-in-touch .socmeds {
-    margin-top: 4%;
-}
-
-.lets-get-in-touch .socmeds ul {
-    list-style-type: none;
-}
-
-.lets-get-in-touch .socmeds ul li a {
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-
-}
-
-.left-section {
-    text-align: center;
-}
-
-.lets-get-in-touch .socmeds ul li i {
-    margin-right: 10px;
-}
-
-.right-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.right-section .emailadd {
-    margin-top: 50px;
-    height: 50px;
-    border-radius: 20px;
-    border: solid black 0.5px;
-    padding: 20px;
-}
-
-.right-section .firstname {
-    height: 50px;
-    border-radius: 20px;
-    border: solid black 0.5px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.right-section .lastname {
-    height: 50px;
-    border-radius: 20px;
-    border: solid black 0.5px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.right-section .btn-submit {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    border: none;
-    background-color: #3ea832;
-    color: white;
-}
