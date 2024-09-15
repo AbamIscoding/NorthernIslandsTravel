@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ultra&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    background: none;
+    color: white;
+    padding: 30px;
+    z-index: 1000;
+}
+.brand-title .tat{
+    margin-left: 24.5px;
+    letter-spacing: 3.8px;
+}
+.brand-title h1{
+    letter-spacing: 2px;
+}
+.navbar-white {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    z-index: 1000;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.brand-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+    margin-top: 2.5px;
+}
+
+.navbar-links {
+    height: 190%;
+    float: right;
+    margin-right: 30px;
+    padding-top: 70px;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+
+
+.navbar-links-white {
+    height: 100%;
+    float: right;
+}
+
+.navbar-links-white ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links-white li {
+    list-style: none;
+}
+
+.navbtn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbtn-white {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    text-decoration: underline;
+    color: #fff;
+    border-radius: 10px;
+    transition: 300ms;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.navbar-links-white li:hover {
+    text-decoration: underline;
+    color: #fff;
+    border-radius: 10px;
+    transition: 300ms;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+ul .dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul .dropdown li {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0.75px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button .bar{
+        margin-top: 5px;
+    }
+    .navbtn{
+        margin-top: 5px;
+    }
+
+    .toggle-button {
+        display: flex;
+        
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /*Clicking the toggle button will show the choices in the left side, bellow the toggle button*/
+    .navbar-links ul li {
+        text-align: right;
+        margin-top: -10px;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    /*the three line colors in phone size*/
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
