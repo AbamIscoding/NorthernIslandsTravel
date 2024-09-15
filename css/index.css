@@ -1,6 +1,8 @@
-.hero{
+
+
+.hero {
     width: 100%;
-    height:100vh;
+    height: 100vh;
     position: relative;
     padding: 0.5%;
     display: flex;
@@ -18,8 +20,6 @@
     font-size: 9rem;
     margin-bottom: -30px;
     cursor: default;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ultra', serif;
     font-family: 'Viga', sans-serif;
 }
 
@@ -39,8 +39,6 @@
         font-size: 2rem;
         margin-bottom: -30px;
         cursor: default;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Ultra', serif;
         font-family: 'Viga', sans-serif;
     }
 }
@@ -49,10 +47,6 @@
     .hero div h1 {
         margin-bottom: 0px;
         font-size: 2rem;
-        cursor: default;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Ultra', serif;
-        font-family: 'Viga', sans-serif;
     }
 
     .hero div p {
@@ -60,11 +54,9 @@
     }
 }
 
-
-/*experience summer section*/
-
+/* Places-to-go section */
 .places-to-go {
-    background-color: lemonchiffon;
+    background-color: #98DED9;
     width: 100%;
     padding: 100px 20px;
     text-align: center;
@@ -86,7 +78,7 @@
     height: 100%;
     border-radius: 5px;
     z-index: 6;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 5px 10px #C7FFD8;
     flex: 1;
 }
 
@@ -98,7 +90,7 @@
     flex: 1;
     z-index: 4;
     height: 100%;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 5px 10px #C7FFD8;
 }
 
 .infohold h3 {
@@ -139,16 +131,15 @@
     .infohold h3 {
         font-size: 30px;
         margin-top: 25px;
-        letter-spacing: -1px;
     }
 }
 
-
-/* 3 cards */
-.heading{
+/* Card section */
+.heading {
     margin-top: 70px;
     margin-left: 55px;
 }
+
 .card-container {
     margin-top: 20px;
     display: flex;
@@ -159,37 +150,32 @@
 .card {
     width: 400px;
     margin: 20px 10px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .pageCard img {
     height: 300px;
     width: 400px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
-.card-detail{
+
+.card-detail {
     padding: 10px;
 }
 
 @media screen and (max-width: 1200px) {
     .card-container {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
-
+    
     .card {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-    .pageCard img {
-        border-radius: 10px 10px 0px 0px;
-    }
 }
 
-.placestogoforreal{
+/* Placestogoforreal section */
+.placestogoforreal {
     background-image: url('../assets/Batan_view/chgurch.jpg');
     background-position: center;
     width: 100%;
@@ -199,35 +185,34 @@
     transition: 0.5s;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: 700px;
     position: relative;
 }
 
-.main-text{
+.main-text {
     padding: 8% 10%;
     font-size: 50px;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ultra', serif;
     font-family: 'Viga', sans-serif;
     text-shadow: 2px 2px 4px #000000;
 }
-.main-text span{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ultra', serif;
+
+.main-text span {
     font-family: 'Viga', sans-serif;
     font-size: 60px;
 }
-.paragraph-3rdsec{
+
+.paragraph-3rdsec {
     margin: 0 10%;
     width: 45%;
     font-size: 20px;
     color: white;
     text-shadow: 2px 2px 5px #000000;
 }
-.buttons button{
+
+.buttons button {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -237,26 +222,35 @@
     font-size: 20px;
     margin-right: 5px;
     font-weight: bold;
-    
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: end;
 }
+
+
+/*Phone size*/
 @media screen and (max-width: 1200px) {
-    .main-text{
+    .main-text {
         padding: 4% 5%;
         font-size: 30px;
-        text-shadow: 2px 2px 4px #000000;
     }
-    .main-text span{
+
+    .heading {
+        margin-left: 20px;
+    }
+    .heading h1{
+        font-size: 30px;
+    }
+    
+    .main-text span {
         font-size: 40px;
     }
-    .paragraph-3rdsec{
+
+    .paragraph-3rdsec {
         margin: 0 5%;
         width: 70%;
         font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 5px #000000;
     }
 }
